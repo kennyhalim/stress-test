@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stress Test</title>
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+  </head>
+  <body>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Stress Test</h2>
+    </div>
+    <form id="stressSurvey">
+      <div class="form-group">
+        <p>In the past year, I have spent more than half of the days:</p>
+        <input type="checkbox" name="feel" value="energy"> Feeling nenergetic/more tired than usual<br>
+        <input type="checkbox" name="feel" value="sleep">Sleeping too much or not enough<br>
+        <input type="checkbox" name="feel" value="food">Overeating or not eating enough<br>
+        <input type="checkbox" name="feel" value="patience">Being less patient with others and more irritable<br>
+        <input type="checkbox" name="feel" value="selfesteem">Low self-esteem<br>
+        <input type="checkbox" name="feel" value="libido">With decreased libido<br>
+
+      </div>
+      <div class="form-group">
+        <p>In the past year, I have experiences these physical symptoms:</p>
+        <input type="checkbox" name="health" value="worry"> Constant Worrying<br>
+        <input type="checkbox" name="health" value="racing">Racing thoughts<br>
+        <input type="checkbox" name="health" value="focus">Inability to focus<br>
+        <input type="checkbox" name="health" value="colds">Frequent colds<br>
+        <input type="checkbox" name="health" value="drymouth">Dry mouth<br>
+        <input type="checkbox" name="health" value="pain">In more pain than usual/having unexplained pains<br>
+        <input type="checkbox" name="health" value="tinitus">Ringing in the ear<br>
+        <input type="checkbox" name="health" value="grindingteeth">Clenched jaw and grinding teeth<br>
+      </div>
+
+      <div class="form-group">
+        <p>In the past year, I have been doing this to cope with my stress:</p>
+        <input type="checkbox" name="coping" value="eat"> Eat copingy, well-balanced meals<br>
+        <input type="checkbox" name="coping" value="exercise">Exercise on regular basis<br>
+        <input type="checkbox" name="coping" value="meditate">Meditation<br>
+        <input type="checkbox" name="coping" value="enoughsleep">Get plenty of sleep<br>
+        <input type="checkbox" name="coping" value="talk">Talk to others<br>
+        <input type="checkbox" name="coping" value="drugs">Avoid drugs and alcohols<br>
+        <input type="checkbox" name="coping" value="break">Take a break when feeling stressed out<br>
+        <input type="checkbox" name="coping" value="time">Manage my time better<br>
+      </div>
+     <button type="submit">Submit Survey</button>
+    </form>
+
+    <span id="positiveResult">
+      <p><b>Based on your answers, you've been doing a pretty good job managing your stress - though don't hesitate to experiment with any of the coping mechanisms you haven't tried yet.</b></p>
+    </span>
+    <br>
+    <span id="negativeResult">
+      <p><b>You selected several physical symptoms and warning signs and indicated few coping mechanisms. Here are some resources that might help you better understand how to reduce your stress:</b></p>
+    </span>
+    <br>
+    <span id="neutralResult">
+        <p><b>You indicated few warning signs and physical symptoms, but don't practice any coping mechanisms to reduce them. It may not be bad now but stress can spiral out of control quickly so we recommend learning and practicing at least 3 of the listed coping mechanisms.</b></p>
+    </span>
+  </div>
+</body>
+</html>
